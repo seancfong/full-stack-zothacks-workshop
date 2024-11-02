@@ -7,10 +7,12 @@ function App() {
   const [session, setSession] = useState(null);
 
   useEffect(() => {
+    // Check the session when the component mounts (loads)
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
     });
 
+    // Update the session when anything changes (login, signout)
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
