@@ -103,35 +103,37 @@ export default function TodoApp() {
         <h1 className="text-3xl font-bold">Todo App</h1>
         <button
           onClick={() => supabase.auth.signOut()}
-          className="btn btn-ghost bg-base-200 btn-sm"
+          className="btn btn-ghost bg-base-300 btn-sm"
         >
           Sign Out
         </button>
       </div>
-      <ul className="menu bg-base-200 rounded-box">
-        {todos.map((todo) => (
-          <li key={todo.id}>
-            <button
-              onClick={() => {
-                toggleTodo(todo);
-              }}
-              className={`${
-                todo.is_complete ? "line-through text-gray-600" : ""
-              } btn btn-ghost justify-start no-animation`}
-            >
-              {todo.task}
-            </button>
-          </li>
-        ))}
-      </ul>
-      <form onSubmit={addTodo}>
-        <input
-          type="text"
-          name="task"
-          placeholder="What needs to be done?"
-          className="input input-bordered w-full placeholder:text-gray-600"
-        />
-      </form>
+      <div className="menu bg-base-100 rounded-btn space-y-2">
+        <ul>
+          {todos.map((todo) => (
+            <li key={todo.id}>
+              <button
+                onClick={() => {
+                  toggleTodo(todo);
+                }}
+                className={`${
+                  todo.is_complete ? "line-through text-gray-300" : ""
+                } btn btn-ghost justify-start no-animation text-base hover:bg-base-200`}
+              >
+                {todo.task}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <form onSubmit={addTodo}>
+          <input
+            type="text"
+            name="task"
+            placeholder="What needs to be done?"
+            className="input border-2 border-dashed border-gray-200 w-full placeholder:text-gray-300"
+          />
+        </form>
+      </div>
     </div>
   );
 }

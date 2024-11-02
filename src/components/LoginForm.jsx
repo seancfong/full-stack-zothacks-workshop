@@ -20,7 +20,7 @@ export default function LoginForm() {
 
   return (
     <form className="space-y-4" onSubmit={login}>
-      <label className="input input-bordered flex items-center gap-2">
+      <label className="input input-bordered flex items-center gap-2 bg-base-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -32,7 +32,7 @@ export default function LoginForm() {
         </svg>
         <input type="text" className="grow" placeholder="Email" name="email" />
       </label>
-      <label className="input input-bordered flex items-center gap-2">
+      <label className="input input-bordered flex items-center gap-2 bg-base-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -52,7 +52,7 @@ export default function LoginForm() {
           name="password"
         />
       </label>
-      <button type="submit" className="btn btn-primary w-full">
+      <button type="submit" className="btn btn-neutral w-full">
         Login
       </button>
     </form>
