@@ -32,3 +32,4 @@ This repository is an example full-stack to-do list application built with React
 ## Resources
 
 - [Folder of Bookmarks](https://arc.net/folder/3AAA6029-C6C2-4C0B-A369-1AB89E410C47)
+- [Slide Deck](https://www.figma.com/slides/Cvu8TaTVeJaixA8lmlhLKE/%5BZotHacks%5D-Introduction-to-Full-stack-Development?node-id=35-63&t=NnYDG3hWui2Ge0bN-1)
