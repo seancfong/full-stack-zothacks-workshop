@@ -1,4 +1,4 @@
-# Full Stack Development with React + Supabase
+# :wrench: Full Stack Development with React + Supabase
 
 | ZotHacks 2024 Workshop
 
@@ -10,14 +10,14 @@ This repository is an example full-stack to-do list application built with React
 
 ## Getting Started from scratch
 
-1. Create a vite app
+1. Create a vite app :zap:
 
    - `npm create vite@latest`
    - select `React`
    - select `JavaScript + SWC`
    - `cd` into your project and run `npm install`
 
-2. Install dependencies for this example
+2. Install dependencies for this example :blue_book:
 
    - note: 'npm i' is short for 'npm install'
    - note: `npm install -D` means 'install as a developer dependency'
